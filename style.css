@@ -36,7 +36,7 @@ font-size: clamp(1em,5vw,2em)
     margin: 30px 0;
 }
 .about-section h1{
-    font-size: clamp(1.2em,5vw,3em);
+    font-size: clamp(1.5em,5vw,3em);
     font-weight: 400;
     margin-bottom: 20px;
 }
@@ -96,24 +96,26 @@ footer p {
         align-items: center;
         justify-content: center;
     }
+    .content {
+        margin-top: 15px;
+    }
     .content h1{
         text-align: center;
     }
     .content h4{
         text-align: center;
+    }   
+    footer p {
+        font-size: 14px;
     }
-
-    .about-section h1{
-        padding: 0 10px;
-        font-size: 2em;
+    
+    @media (max-width:320px){
+        .content {
+            margin-top: 10px;
+        }
+        footer p {
+            font-size: 12px;
+            margin: 0 auto;
+        }
     }
-    .about-section p , .bio-section li{
-        padding: 0 10px;
-        font-size: 1em;
-        line-height: 1em;
-    }
-    .bio-section h3{
-        padding: 0 10px;
-        font-size: 1.5em;
-    }    
 }
